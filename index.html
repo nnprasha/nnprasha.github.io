@@ -51,6 +51,10 @@
 				counter = 4;			
 			document.getElementById("latestProject").src = arr[counter];
 		}
+		
+		function openImage(){
+			window.open(document.getElementById("latestProject").src);
+		}
     </script>
 	
     <link href="themes/4/js-image-slider.css" rel="stylesheet" type="text/css" />
@@ -133,7 +137,8 @@
                                 <h3 class="title"><a href="assets/pdfs/CommunicationChannel.pdf" target="_blank">Remote Code Publisher</a></h3>
                                 <p class="summary">Developed means to display source code files as web pages with embedded child links. Each link refers to a code file that the displayed code file depends on.</p>
                                 <div class="featured-image">
-										<img id="latestProject" class="img-responsive project-image" src="assets/images/projects/Latest1.PNG" alt="project name" />
+										<a href="javascript:openImage()" target="_blank"><img id="latestProject" class="img-responsive project-image" src="assets/images/projects/Latest1.PNG" alt="project name" /></a>
+
 									<div style="text-align:center;padding:5px;z-index:5; margin-top: -10px;">
 										<a onclick="previous()" class="group2-Prev"></a>
 										<a onclick="next()" class="group2-Next"></a>
